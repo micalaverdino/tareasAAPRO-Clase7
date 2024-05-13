@@ -1,0 +1,111 @@
+.container {
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 1 auto; /* Centra el contenedor horizontalmente */
+    padding: 20px; /* Espaciado interno del contenedor */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    margin-bottom: 10px; /* Espacio entre filas */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.colA {
+    padding: 5px; /* Espaciado interno de las columnas */
+    background-color: #fff; /* Fondo de las columnas */
+    flex-basis: calc(33.33% - 20px); /* Tamaño de las columnas con margen entre ellas */
+    margin: 20px; /* Margen entre las columnas */
+    height: 200px;
+    width: 500px;
+}
+.col1{
+    background-color: cadetblue;
+    border: 3px solid #000000;
+    width: 200px;
+    height: 100px;
+    padding: 15px;
+}
+.col2{
+    background-color: yellowgreen;
+    border: 3px solid #000000;
+    width: 200px;
+    height: 100px;
+    padding: 15px;
+}
+.col3{
+    background-color: tomato;
+    border: 3px solid #000000;
+    width: 200px;
+    height: 100px;
+    padding: 15px;
+}
+/* Estilos específicos para tamaños de pantalla más pequeños (puedes ajustar según sea necesario) */
+@media (max-width: 320px) {
+    .container {
+        padding: 10px; /* Reducir el espaciado interno en pantallas pequeñas */
+    }
+    .col {
+        padding: 5px; /* Reducir el espaciado interno de las columnas en pantallas pequeñas */
+    }
+}
+.container1 {
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 1 auto; /* Centra el contenedor horizontalmente */
+    padding: 20px; /* Espaciado interno del contenedor */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.columna {
+grid-template-columns: 20px repeat(2, 1fr);
+}
+.row2 {
+    margin-bottom: 10px; /* Espacio entre filas */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+.colB {
+    padding: 5px; /* Espaciado interno de las columnas */
+    background-color: #fff; /* Fondo de las columnas */
+    flex-basis: calc(33.33% - 20px); /* Tamaño de las columnas con margen entre ellas */
+    margin: 20px; /* Margen entre las columnas */
+    height: 200px;
+    width: 500px;
+}
+.col4{
+    background-color: rgba(255, 235, 15, 0.894);
+    border: 3px solid #000000;
+    width: 200px;
+    height: 100px;
+    padding: 15px;
+}
+.col5{
+    background-color: rgb(232, 82, 255);
+    border: 3px solid #000000;
+    width: 200px;
+    height: 100px;
+    padding: 15px;
+}
+.col6{
+    background-color: rgba(255, 159, 42, 0.786);
+    border: 3px solid #000000;
+    width: 200px;
+    height: 100px;
+    padding: 15px;
+}
+/* Estilos específicos para tamaños de pantalla más pequeños (puedes ajustar según sea necesario) */
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+    .container {
+        padding: 10px; /* Reducir el espaciado interno en pantallas pequeñas */
+    }
+    .col {
+        padding: 5px; /* Reducir el espaciado interno de las columnas en pantallas pequeñas */
+    }
+}
